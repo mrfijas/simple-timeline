@@ -1,0 +1,38 @@
+.timeline {
+    height: 50px;
+    margin: 50px;
+}
+
+.timeline .tick {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.timeline .tick:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    left: 50%;
+    top: 12.5%;
+    height: 25%;
+    background: gray;
+}
+
+.timeline .tick--first-of-month:before {
+    top: 0;
+    height: 50%;
+}
+
+.timeline .tick > span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.timeline .tick span span {
+    display: block;
+}
